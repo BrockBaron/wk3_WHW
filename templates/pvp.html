@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Lets Play RPS</h1>
+<section>
+    <p>
+        Player 1 {{ p1.player_name }} chooses <b>{{ p1.player_choice }}</b>
+    </p>
+        
+    <p>
+        Player 2 {{ p2.player_name }} chooses <b>{{ p2.player_choice }}</b>
+    </p>
+</section>
+
+<h3>Game Result</h3>
+<section>
+
+    {% if winner == None %}
+    <p> It's a draw! </p>
+    {% elif winner==winner %}
+    <p>Player {{ winner.player_name}} wins by playing <b>{{winner.player_choice}}</b></p>
+    {%endif%}
+
+</section>
+
+
+{% endblock %}
