@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
     <title>Play RPS {{title}}</title>
 </head>
 <body>
     <header>
+        <h1>RPS DeGoole</h1>
         <nav>
             <ul>
                 <li><a href="/rps">Home</a></li>
-                <li><a href="/rps/pvp">Play PvP</a></li>
-                <li><a href="rps/pvc">Play PvC</a></li>
+                <li><a href="/rps/pvp/rock/rock">Play PvP</a></li>
+                <li><a href="rps/pvc/rock">Play PvC</a></li>
             </ul>
         </nav>
     </header>
+
+    <section>
+
+    </section>
 
     {% block content %}
 

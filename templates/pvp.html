@@ -2,7 +2,19 @@
 
 {% block content %}
 
-<h1>Lets Play RPS</h1>
+<h1>Lets Play RPS PvP</h1>
+
+<h2>PvC Instruction</h2>
+<section>
+    <p>
+        The default game in PvP is rock vs rock.
+        <br>
+        Start game by Player 1 selecting "rock, paper, scissors" choice by replacing /rps/pvp/<b>rock</b>/rock in the URL navigator then, Player 2 reaplaces /rps/pvp/rock/<b>rock</b> with their choice and hits return.
+    </p>
+</section>
+
+<h2>Player Choices</h2>
+
 <section>
     <p>
         Player 1 {{ p1.player_name }} chooses <b>{{ p1.player_choice }}</b>

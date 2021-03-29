@@ -1,0 +1,11 @@
+header {
+    background: linear-gradient(sandyBrown, saddlebrown);
+    padding: 10px;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+}
+
+header > nav > ul{
+    list-style: none;
+        
+}
